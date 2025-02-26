@@ -1,0 +1,13 @@
+body {
+  font-family: 'SUIT', sans-serif;
+}
+
+/* 멤버 서비스 */
+.member-service {
+  background: yellow;
+}
+
+/* 멤버 링크 */
+.member-link {
+  background: pink;
+}
