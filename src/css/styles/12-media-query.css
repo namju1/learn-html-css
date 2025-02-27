@@ -1,0 +1,5 @@
+@import '/src/common/best-reset.css';
+
+body {
+  background-color: pink;
+}
