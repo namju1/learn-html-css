@@ -1,0 +1,19 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/login-theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+fieldset {
+}
+
+.input {
+  background: yellow;
+  position: relative;
+  border: 5px solid blue;
+
+  p {
+    font-size: var(--font-xs);
+    color: var(--red-500);
+    position: absolute;
+  }
+}
