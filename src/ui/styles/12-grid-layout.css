@@ -1,0 +1,38 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+
+/* 헤더 */
+.header {
+  background: var(--pastel-coral);
+  height: 10vh;
+}
+
+/* 내비게이션 */
+.navigation {
+  background: var(--pastel-green);
+  height: 15vh;
+}
+
+/* 메인 콘텐츠 + 사이드바 부모 */
+.main-container {
+  display: flex; /* 가로 정렬 */
+  height: 40vh; /* 전체 높이 */
+}
+
+/* 메인 콘텐츠 */
+.content {
+  background: var(--pastel-aqua);
+  flex: 1; /* 50% 차지 */
+}
+
+/* 사이드 바 */
+.sidebar {
+  background: var(--pastel-yellow);
+  flex: 1; /* 50% 차지 */
+}
+
+/* 푸터 */
+.footer {
+  background: var(--pastel-lavender);
+  height: 10vh;
+}
