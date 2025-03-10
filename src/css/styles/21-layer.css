@@ -1,0 +1,36 @@
+/* 선언 순서대로 !important붙이면 우선순위 높아짐*/
+@layer module, state;
+
+@layer state {
+  .alert {
+    background-color: purple;
+  }
+  p {
+    border: medium solid limegreen;
+    padding: 2em;
+  }
+}
+/* !important 넣으면 1순위 */
+@layer module {
+  .alert {
+    border: medium solid violet;
+    background-color: green;
+    color: white;
+  }
+  p {
+    padding: 1em;
+  }
+  p.alert {
+    background: red;
+  }
+}
+/* 2순위 */
+@layer {
+  p.alert {
+    background-color: blue;
+  }
+}
+/* 그냥 1순위 !important 다 붙일경우는 우선순위가 제일 낮아짐*/
+p.alert {
+  background-color: gray;
+}
